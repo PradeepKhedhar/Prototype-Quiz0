@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+section {
+border: solid 2px black;
+border-radius: 1rem;
+margin: 4rem;
+padding: 1rem;
+
+}
+
+#home_input{
+    display: flex;
+}
+
+.userdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#innercategory{
+    display: flex;
+}
+#innercategory button{
+    margin: 4px;
+}
+#quiz ul{
+    
+    list-style-type: none;
+}
+li{
+    margin: 2px;
+    
+}
+
+    

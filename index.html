@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/New Quiz App/styles.css">
+</head>
+<body>
+ <div class="container">  
+
+    <!--Home Page start-->
+    <section id="homepage">
+       <div class="userdetails">
+         <div>
+            <img src="/Linkedin Assignment/textbook.png" alt="No image" width="100px" height="100px">
+         </div>
+         <div>
+         <h2>Hello User !</h2>
+         </div>
+         <div>
+         <p>Enter Your Name and Click Enter</p> 
+         </div>
+         <div id="home_input">
+            <input type="text" class="form-control" id="user_name" placeholder="Enter your name..."> <br>
+            <button id="home_enter" type="button" class="btn btn-success">Enter</button>
+         </div>
+       </div>
+
+       <hr>
+
+       <div id="category">
+         <h2>Select Category</h2> 
+         
+         <div id="innercategory">
+            
+          <button id="quiz1" type="button" class="btn btn-primary" onclick="pipe()">Pipes</button>
+          <button id="quiz2" type="button" class="btn btn-primary" onclick="probability()">Probability</button>
+          <button id="quiz3" type="button" class="btn btn-primary" onclick="age()">Age</button>
+          <button id="quiz4" type="button" class="btn btn-primary" onclick="profit_and_loss()">Profit and Loss</button>
+         </div>
+
+       </div>    
+ 
+    </section>
+    <!-- Home page end -->
+    
+    <!-- Quiz Page -->
+    <section id="quiz">
+     <div>
+        <div class="quizformat">
+            <div class="score_and_timer_div">
+              <div id="timer">Time Left : 60 Seconds </div>
+              <div id="score">Score : 0</div>
+            </div>
+           <div id="question_box">Here is your question?</div>
+           <div>
+            <ul id="options_list">
+               <li><button id="option1" type="button" class="btn btn-primary" value="a">Option1</button></li>
+               <li><button id="option2" type="button" class="btn btn-primary" value="b">Option2</button></li>
+               <li><button id="option3" type="button" class="btn btn-primary" value="c">Option3</button></li>
+               <li><button id="option4" type="button" class="btn btn-primary" value="d">Option4</button></li>
+            </ul>
+            <div id="nextquestion"><button type="button" class="btn btn-primary">Next Question</button></div>
+           </div>
+        </div>
+     </div>
+    </section>
+    
+    <!-- Quiz Page End-->
+
+    <!--Result Page-->
+    <section id="result">
+      <div>
+         <div>
+         <h2>Quiz Result</h2>
+          <div>
+           <p><span id="fetch_name">XXX</span> your result is :</p>
+           <p>Total Time Taken : <span id="fetch_time"></span> secs</p>
+           <p>Total Questons : 10</p>
+           <p>Attempts : <span id="fetch_attempt"></span></p>
+           <p>Correct : <span id="fetch_correct"></span></p>
+           <p>Incorrect : <span id="fetch_wrong"></span></p>   
+           <p>Percentage : <span id="fetch_percentage"></span></p>
+         </div>
+         <div>
+            <button type="button" class="btn btn-primary">Start Again</button>
+            <button type="button" class="btn btn-primary">Go to Home</button>
+         </div>  
+         </div>
+      </div>  
+    </section>
+    <!-- Result Page  -->
+
+</div> 
+
+
+<script src="/New Quiz App/main.js"></script>    
+</body>
+</html>
